@@ -1,8 +1,12 @@
 img {
-    object-fit: contain;
-    padding:20px;
-    margin:auto;
-    max-width: 75%;
+    display:block;
+    object-fit:cover;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    max-height:auto;
+    /*max-width: 75%;*/
     justify-content: center;
 }
 
@@ -15,7 +19,7 @@ img {
 
 .image{
     position: relative;
-    height:auto;
+    height:100%;
     max-width:38%;
     /*border:1px solid red;*/
 }
@@ -29,10 +33,36 @@ background-image: url("https://www.transparenttextures.com/patterns/asfalt-light
 .description{
     position: absolute;
     height:100%;
-
-    padding:10px;
+    /*padding:10px;*/
     left:40%;
     /*border:3px solid green;*/
+}
+
+.description h2{
+    display:block;
+    font-size:3em;
+    font-weight:bold;
+    /*border:1px solid red;*/
+    max-width:20%;
+}
+
+.description h3{
+    /*border:1px solid red;*/
+    max-width:75%
+
+}
+
+.description h5{
+    /*border:1px solid red;*/
+    max-width:75%;
+
+}
+
+.description p{
+    text-align: left;
+    /*padding: 0em .2em .2em .005em;*/
+    font-size: .75em;
+    /*border:1px solid red;*/
 }
 
 .list{
@@ -43,7 +73,7 @@ background-image: url("https://www.transparenttextures.com/patterns/asfalt-light
     background-color: #e9e3abd7;
     background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    /*border:1px solid yellow; */
+    /*border:1px solid yellow;*/
 }
 
 .list h1{
@@ -51,32 +81,14 @@ background-image: url("https://www.transparenttextures.com/patterns/asfalt-light
     font-family: 'Crete Round', serif;
 }
 
-.description h2{
-    font-size:3em;
-    font-weight:bold;
-
-}
-
-.description h3{
-
-}
-
-.description h5{
-
-}
-
-.description p{
-    text-align: left;
-    padding: 0em .2em .2em .005em;
-    font-size: .75em;
-}
-
 article{
     text-align: center;
-
 }
 
 .honorable{
-    max-width:50%;
-    
+    max-width:50%;    
+}
+
+footer{
+    color:white;
 }
